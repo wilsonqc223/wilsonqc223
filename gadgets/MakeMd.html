@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../ind.css">
+    <link rel="icon" href="../title.ico" type="image/x-ico">
+    <title>MarkDown</title>
+    <script type="text/javascript" src="showdown.min.js"></script>
+    <title>青尘的小站</title>
+    <link rel="stylesheet" type="text/css" href="../editormd/css/editormd.min.css">
+
+</head>
+
+<body>
+    <script src="../backboard.js"></script>
+    <!-- Note
+<div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">请调整浏览器窗口的大小以查看响应效果。</h4>
+</div> -->
+
+    <!-- Header -->
+    <div class="header">
+        <h1>QC's Website</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../gadgets.html">自编小工具</a>
+        <a href="../Introduction-to-the-author.html" style="float:right">作者简介</a>
+        <a href="../articles.html">文章</a>
+        <a href="../online_gadgets.html">在线小工具</a>
+        <a href="../OJ-beta.html">OJ(beta版)</a>
+    </div>
+    <script src="backboard.js"></script>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+
+        <div class="main">
+            <h2>MarkDown编辑器</h2>
+            <del><h1>不好使，QC太懒了不想折腾</h1></del>
+
+            <div class="fakeimg"><a href="https://md.mzr.me/" style="color: black;">MdEider传送门</a></div>
+            <div class="fakeimg">
+                <div id="md-content" style="z-index: 1 !important;">
+                    <textarea></textarea>
+                </div>
+
+                <!-- 这里必须先引入jquery -->
+                <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+                <!-- 引入js -->
+                <script src="../editormd/editormd.min.js"></script>
+                <script type="text/javascript">
+                    //初始化Markdown编辑器
+                    var contentEditor;
+                    $(function() {
+                        contentEditor = editormd("md-content", {
+                            width: "100%", //宽度
+                            height: 500, //高度
+                            syncScrolling: "single", //单滚动条
+                            path: "../editormd/lib/" //依赖的包路径
+                        });
+                    });
+                </script>
+            </div>
+            <div class="side_r">
+                <div class='calendar' id='calendar'></div>
+                <div class='fakeimg'>
+                    <script type='text/javascript' src='rili.js'></script>
+                    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+                    <script type="text/javascript">
+                        document.write("本机IP: " + returnCitySN["cip"] + ',' + returnCitySN["cname"])
+                    </script>
+                </div>
+                <div class="fakeimg">
+                    <script type="text/javascript">
+                        document.write("您是从" + document.title + "这个页面来的");
+                    </script>
+                </div>
+                <script type='text/javascript' src='../rili.js'></script>
+            </div>
+        </div>
+
+        <!-- Footer
+<div class="footer">
+  <h6>页脚</h6>
+</div> -->
+
+</body>
+
+</html>

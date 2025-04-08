@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../ind.css">
+    <link rel="icon" href="../title.ico" type="image/x-ico">
+
+    <title>青尘的小站</title>
+</head>
+
+<body>
+    <script src="../backboard.js"></script>
+    <!-- Header -->
+    <div class="header">
+        <h1>QC's Website</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../gadgets.html">自编小工具</a>
+        <a href="../Introduction-to-the-author.html" style="float:right">作者简介</a>
+        <a href="../articles.html">文章</a>
+        <a href="../online_gadgets.html">在线小工具</a>
+        <a href="../OJ-beta.html">题库</a>
+        <a href="../onlinejudge.html">OJ--doubleBeta</a>
+        <a href="../lzyz.html">lzyz的梗们</a>
+        <a href="../yr-language/index_with_tree.html">yr-language</a>
+    </div>
+    <script src="../backboard.js"></script>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side_l">
+            <div>
+                <h4 style="text-align: center;height: 20px;">题目列表</h4>
+                <div class="fakeimg"><a href="from-yr-to-mj.html" style="color: black;">From yr to 毛巾</a></div>
+                <div class="fakeimg"><a href="wood_and_huo.html" style="color: black;">带火星的木条</a></div>
+                <div class="fakeimg"><a href="fmjyr.html" style="color: black">翻面煎yr</a></div>
+            </div>
+        </div>
+        <div class="main">
+            <h2>From yr to 毛巾</h2>
+            <div class="fakeimg">
+                <h3>题目背景</h3><br><br>
+                <h2><strong>(根据真实事件改编)</strong></h2><br>
+                <p>众所周知，文峰的食堂是全L市最好的。</p><br>
+                <p>文峰每隔两个周会吃一顿包子。而且还是皮薄馅厚，关键是油特别多。</p><br>
+                <p>一天WTK所在桌子上给了M个包子，有</p><br>
+                <p>菜馅,</p><br>
+                <p>肉馅,</p><br>
+                <p>肉菜馅,</p><br>
+                <p>菜肉馅,</p><br>
+                <p>然后</p><br><br><br><br><br><br><br><br>
+                <del><h6>这些当然跟这道题没有关系</h6></del>
+            </div>
+            <div class="fakeimg">
+                <h3>题目描述</h3><br><br>
+                <p>WTK吃完包子手上沾了N个单位的油。很蓝瘦</p><br>
+                <p>正好在WTK出食堂的道上有M个YR(1-M)，于是WTK灵机一动，就用YR的头发擦手(●'◡'●)</p><br>
+                <p>每个YR的头上也有油，油量为S。WTK擦这个YR后，手上的油就会减少(A-S)个单位。</p><br>
+                <p>因为YR头上油还挺多的，而且可能比WTK手上的油还多。所以WTK手上的油可能会增加（！） </p><br>
+                <p>但是WTK这个懒蛋懒得抬手，所以只能蹭一个区间内YR的头，也就是说只能选一段YR用来擦手而且在这一段内不能抬手。</p><br>
+                <p>但是WTK出完这道题后突然发现这是一个求最小值的题，所以贴心的他决定优雅的加一种擦手方式:</p><br>
+                <p>若WTK连续盘的几个yr(S1-Sn)的头油呈递减趋势(不包含相等),那么WTK就会触发一个神迹:</p><br>
+                <img src="../pictures/shenji.jpg"><br>
+                <p>这个神迹的作用就是： 当WTK盘连续的几个yr的头油满足上边说的，那么WTK手上的油就会减少(S1+S2+.....+Sn),甚至手油会有负数(!)</p><br>
+                <h6>(其实就是懒得出特殊数据)Pia!(ｏ ‵-′)ノ”(ノ﹏
+                    <。)</h6><br>
+                        <p>现在WTK想知道，他走出食堂时手上的油最少是多少。</p><br>
+            </div>
+            <div class="fakeimg">
+                <h3>输入格式</h3><br><br>
+                <p>第一行 N,M </p><br>
+                <p>接下来M个S，中间用空格隔开，表示第i个YR头油有Si</p><br>
+            </div>
+            <div class="fakeimg">
+                <h3>输出格式</h3><br><br>
+                <p>Q</p><br>
+                <p>表示最后手上的油最少为Q</p><br>
+            </div>
+            <div class="fakeimg">
+                <h3>样例组</h3><br><br>
+
+                <h5>输入#1</h5>
+                <p>10 5</p>
+                <p>0 9 8 4 11</p><br>
+                <h5>输出#1</h5>
+                <p>-11</p>
+
+            </div>
+            <div class="fakeimg">
+                <h3>提示说明</h3><br><br>
+                <p>均不超过int范围</p><br>
+                <p>YR编号： 1-M</p><br>
+            </div>
+        </div>
+        <div class="side_r">
+            <div class='calendar' id='calendar'></div>
+            <div class='fakeimg'>
+                <script type='text/javascript' src='rili.js'></script>
+                <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+                <script type="text/javascript">
+                    document.write("本机IP: " + returnCitySN["cip"] + ',' + returnCitySN["cname"])
+                </script>
+            </div>
+            <script type='text/javascript' src='../rili.js'></script>
+        </div>
+    </div>
+
+    <!-- Footer
+<div class="footer">
+  <h6>页脚</h6>
+</div> -->
+
+</body>
+
+</html>

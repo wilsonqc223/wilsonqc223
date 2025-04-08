@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        canvas {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            overflow: hidden;
+            margin: 0;
+            background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.ayla.com.cn%2Fassets%2Fblt8947f26905c0f94e%2FCSDN.jpg&refer=http%3A%2F%2Fwww.ayla.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643517927&t=77c836c02ff00e1906d2c826b82c85e8');
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position-x: 50%;
+        }
+        
+        #ab {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            transform: translateY(-50%);
+            font-family: '行楷', cursive;
+            font-size: 20px;
+            color: black;
+            padding: 0 20px;
+        }
+        
+        #ab span {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            margin-top: 5px;
+            font-size: 5rem;
+            color: red;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="ind.css">
+    <link rel="icon" href="title.ico" type="image/x-ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+
+    <title>青尘的小站</title>
+
+    <body>
+        <script src="backboard.js"></script>
+        <!-- Note
+<div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">请调整浏览器窗口的大小以查看响应效果。</h4>
+</div> -->
+
+        <!-- Header -->
+        <div class="header">
+            <h1>QC's Website</h1>
+            <!--lxy.html-->
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="gadgets.html">自编小工具</a>
+            <a href="Introduction-to-the-author.html" style="float:right">作者简介</a>
+            <a href="articles.html">文章</a>
+            <a href="online_gadgets.html">在线小工具</a>
+            <a href="OJ-beta.html">题库</a> 
+            <a href="onlinejudge.html">OJ--doubleBeta</a>
+            <a href="lzyz.html">lzyz的梗们</a>
+            <a href="/yr-language/index_with_tree.html">yr-language</a>
+            <a href="yrlan.html">YR语言</a>
+            
+        </div>
+        <script src="backboard.js"></script>
+        <!-- The flexible grid (content) -->
+        <div class="row">
+            <div class="main">
+                <!-- <script>
+                    window.onload = function starttime() {
+                        time(h1, '2023/1/1');
+                        ptimer = setTimeout(starttime, 1000); // 添加计时器
+                    }
+             
+                    function time(obj, futimg) {
+                        var nowtime = new Date().getTime(); // 现在时间转换为时间戳
+                        var futruetime = new Date(futimg).getTime(); // 未来时间转换为时间戳
+                        var msec = futruetime - nowtime; // 毫秒 未来时间-现在时间
+                        var time = (msec / 1000); // 毫秒/1000
+                        var day = parseInt(time / 86400); // 天  24*60*60*1000
+                        var hour = parseInt(time / 3600) - 24 * day; // 小时 60*60 总小时数-过去的小时数=现在的小时数
+                        var minute = parseInt(time % 3600 / 60); // 分 -(day*24) 以60秒为一整份 取余 剩下秒数 秒数/60 就是分钟数
+                        var second = parseInt(time % 60); // 以60秒为一整份 取余 剩下秒数
+                        main.innerHTML = "距离2023年还有：" + day + "天" + hour + "小时" + minute + "分" + second + "秒" + "<br><span>新年快乐</span>"
+                    }
+                </script> -->
+                <audio autoplay="autoplay" src="http://music.163.com/song/media/outer/url?id=1851244378.mp3" id="song">
+            </audio>
+                <h2>青尘的小站</h2>
+                <h5>建设中</h5>
+                <h4>建站事记：</h4>
+                <div class="fakeimg">
+                    <h1 id="ab"></h1>
+                    <br><br><br><br><br>
+                </div>
+                <div class="fakeimg">
+                    <p>2022/1/29 建站</p>
+                    <p>2022/1/29 9:37 被LXY嘲讽手机莫得优化</p>
+                    <p>2022/1/29 10:06 痛改布局</p>
+                    <p>2022/2/13 19:32 加了N多东西</p>
+                </div>
+                <!-- <a href="happynewyear.html"><h1 >老姜点这里点这里</h1></a> -->
+                <a href="https://gitee.com/wilsonqc223/yr-language"><h1>YR语言</h1></a>
+                <br><br>
+                <div class="fakeimg"><a style="color: black;" href="https://wilsonqc223.gitee.io/wilsonqc223_old/index.html">旧站点(黑历史)</a></div>
+                <!-- <script>
+        window.onload = function starttime() {
+            time(ab, '2023/1/1');
+            ptimer = setTimeout(starttime, 1000); // 添加计时器
+        }
+ 
+        function time(obj, futimg) {
+            var nowtime = new Date().getTime(); // 现在时间转换为时间戳
+            var futruetime = new Date(futimg).getTime(); // 未来时间转换为时间戳
+            var msec = futruetime - nowtime; // 毫秒 未来时间-现在时间
+            var time = (msec / 1000); // 毫秒/1000
+            var day = parseInt(time / 86400); // 天  24*60*60*1000
+            var hour = parseInt(time / 3600) - 24 * day; // 小时 60*60 总小时数-过去的小时数=现在的小时数
+            var minute = parseInt(time % 3600 / 60); // 分 -(day*24) 以60秒为一整份 取余 剩下秒数 秒数/60 就是分钟数
+            var second = parseInt(time % 60); // 以60秒为一整份 取余 剩下秒数
+            document.getElementById("ab").innerHTML = "<br>距离2023年还有：<br>" + day + "天" + hour + "小时" + minute + "分" + second + "秒" + "<br><span>新年快乐</span>"
+        }
+    </script> -->
+    <!-- <audio autoplay="autoplay" src="http://music.163.com/song/media/outer/url?id=1851244378.mp3" id="song">
+</audio> -->
+            </div>
+            
+            <div class="side_r">
+                <div class='calendar' id='calendar'></div>
+                <div class='fakeimg'>
+                    <script type='text/javascript' src='rili.js'></script>
+                    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+                    <script type="text/javascript">
+                        document.write("本机IP: " + returnCitySN["cip"] + ',' + returnCitySN["cname"])
+                    </script>
+                </div>
+                <div class="fakeimg">
+                    <script type="text/javascript">
+                        document.write("您是从" + document.getElementsByTagName(document.referrer) + "这个页面来的");
+                    </script>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer
+<div class="footer">
+  <h6>页脚</h6>
+</div> -->
+
+    </body>
+
+</html>

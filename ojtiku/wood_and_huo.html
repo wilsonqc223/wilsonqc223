@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../ind.css">
+    <link rel="icon" href="../title.ico" type="image/x-ico">
+
+    <title>青尘的小站</title>
+</head>
+
+<body>
+    <script src="../backboard.js"></script>
+    <!-- Note
+<div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">请调整浏览器窗口的大小以查看响应效果。</h4>
+</div> -->
+
+    <!-- Header -->
+    <div class="header">
+        <h1>QC's Website</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../gadgets.html">自编小工具</a>
+        <a href="../Introduction-to-the-author.html" style="float:right">作者简介</a>
+        <a href="../articles.html">文章</a>
+        <a href="../online_gadgets.html">在线小工具</a>
+        <a href="../OJ-beta.html">题库</a>
+        <a href="../onlinejudge.html">OJ--doubleBeta</a>
+        <a href="../lzyz.html">lzyz的梗们</a>
+        <a href="../yr-language/index_with_tree.html">yr-language</a>
+    </div>
+    <script src="../backboard.js"></script>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side_l">
+            <div>
+                <h4 style="text-align: center;height: 20px;">题目列表</h4>
+                <div class="fakeimg"><a href="from-yr-to-mj.html" style="color: black;">From yr to 毛巾</a></div>
+                <div class="fakeimg"><a href="wood_and_huo.html" style="color: black;">带火星的木条</a></div>
+                <div class="fakeimg"><a href="fmjyr.html" style="color: black">翻面煎yr</a></div>
+            </div>
+        </div>
+        <div class="main">
+            <h2>带火星的木条</h2>
+            <div class="fakeimg">
+                <h3>题目背景</h3><br><br>
+                <p>WTK在化学课上听到化学老师说： “检验氧气要用带火星的木条”</p><br>
+                <p>这句话非常正常</p><br>
+                <p>然鹅WTK看了眼窗外，萌生了一个<strong> 大 胆 的 想 法 </strong></p><br><br>
+                <p><strong><del>他想检验木星的大气有没有氧气</del></strong></p><br>
+            </div>
+            <div class="fakeimg">
+                <h3>题目描述</h3><br><br>
+                <p>既然检测氧气，就必须要带火星的木条</p><br>
+                <p>为了得到带火星的木条，WTK找来了n根木条</p><br>
+                <p>然后</p><br>
+                <p>把它捅进火星里</p><br>
+                <p>然后</p><br>
+                <p>以<strong>yr</strong>为支点</p><br>
+                <p>把火星翘到木星上来检验O2</p><br>
+                <img src="https://cdn.luogu.com.cn/upload/image_hosting/w56hfqyh.png"><br>
+                <img src="https://cdn.luogu.com.cn/upload/image_hosting/ebtczbel.png"><br>
+                <h6><del>lgr饶命</del></h6>
+                <h6>-------------------------------------------------------------------------</h6>
+                <p>好的，我们现在有一个绝对固定的yr，火星到yr的距离=木星到yr的距离=a</p><br>
+                <p>把火星翘到木星的阻力为f</p><br>
+                <p>WTK找了n根木条，每条长m。</p><br>
+                <p>WTK想知道每条木条够不够得到火星，如果够得到的话他得使多大劲(忽略重力)</p><br>
+            </div>
+            <div class="fakeimg">
+                <h3>输入格式</h3><br><br>
+                <p>第一行 n a f</p><br>
+                <p>以下n行，每行为m，表示每根木条长度</p><br>
+            </div>
+            <div class="fakeimg">
+                <h3>输出格式</h3><br><br>
+                <p>n行，对于每一条数据：</p><br>
+                <p>若够不到，输出 NO</p><br>
+                <p>若够得到，输出WTK要使多大劲</p><br>
+            </div>
+            <div class="fakeimg">
+                <h3>样例组</h3><br><br>
+
+                <h5>输入#1</h5>
+                <code>47
+                    76834864002694292529709
+                    49036415332012512161678
+                    37719018868803835618367
+                    19621589204083307659772
+                    6690966962417272899213
+                    29659811582549236956122
+                    65506145811595410239165
+                    87166208062949085256802
+                    39539520669830123603109
+                    28323810564830078904958
+                    2423628564045498559707
+                    28121821903495427186120
+                    33006689003742902489492
+                    98689641341511317769717
+                    48887207925483223202472
+                    77940115754888482075497
+                    77809723232263082338374
+                    68223893031745957668254
+                    66885337207863878749950
+                    14271776223953436005881
+                    63686470808317072058102
+                    3237545502096591835383
+                    18853565890437912179257
+                    62404766590988412708389
+                    78334726585040072630462
+                    3622720435759056563239
+                    7727439675880160803038
+                    33581202036939764148139
+                    62891421233399511950952
+                    5487638510214190817935
+                    16228739369503769045188
+                    82222708786787617956605
+                    54064214514801321868620
+                    73641634102607352460603
+                    69507711174629827372033
+                    74655398254131257932799
+                    38574300075137587335428
+                    4448396607878739744466
+                    15218301342016358238362
+                    76139730684565326888944
+                    80905862233224997369197
+                    67757208132037371145503
+                    82511221307856476546852
+                    84260933549185508954385
+                    21840499620941436079386
+                    85885332439161425541720
+                    12451832083008852930858
+                    89810238867539177156041
+                    51702887774706858722432
+                    </code>
+                <h5>输出#1</h5>
+                <code>NO
+                    NO
+                    NO
+                    NO
+                    NO
+                    364686945013221743822022.18723
+                    NO
+                    NO
+                    NO
+                    NO
+                    NO
+                    172397377690179497031193.02482
+                    NO
+                    3408912309557541902661035.73929
+                    3864872167114206768520063.68320
+                    NO
+                    NO
+                    NO
+                    NO
+                    NO
+                    NO
+                    NO
+                    2512034334053546767279506.45429
+                    NO
+                    NO
+                    NO
+                    NO
+                    NO
+                    NO
+                    699297484281342361236397.71146
+                    NO
+                    NO
+                    NO
+                    NO
+                    NO
+                    NO
+                    NO
+                    NO
+                    925499371372521493438017.38889
+                    NO
+                    663754253064442062037509.75726
+                    507362108532236746814913.59109
+                    NO
+                    416299590420487201418659.97199
+                    NO
+                    290373599411214858579703.70583
+                    NO
+                </code>
+
+            </div>
+            <div class="fakeimg">
+                <h3>提示说明</h3><br><br>
+                <p>1
+                    <=n<=100</p><br>
+                        <p><code>100000000000000小于a,f小于100000000000000000000000</code></p><br>
+                        <p>精确到5位小数</p><br>
+                        <p>杠gei平衡定律: F1*L1=F2*L2</p><br>
+                        <p>其实就是yr是支点，a为阻力臂长度，f为阻力。</p><br>
+                        <img src="https://cdn.luogu.com.cn/upload/image_hosting/0ska433p.png">
+            </div>
+        </div>
+        <div class="side_r">
+            <div class='calendar' id='calendar'></div>
+            <div class='fakeimg'>
+                <script type='text/javascript' src='rili.js'></script>
+                <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+                <script type="text/javascript">
+                    document.write("本机IP: " + returnCitySN["cip"] + ',' + returnCitySN["cname"])
+                </script>
+            </div>
+            <div class="fakeimg">
+                <script type="text/javascript">
+                    document.write("您是从" + document.title + "这个页面来的");
+                </script>
+            </div>
+            <script type='text/javascript' src='../rili.js'></script>
+        </div>
+    </div>
+
+    <!-- Footer
+<div class="footer">
+  <h6>页脚</h6>
+</div> -->
+
+</body>
+
+</html>
